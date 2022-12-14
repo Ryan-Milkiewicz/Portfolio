@@ -1,7 +1,9 @@
+import type { NextPage } from "next";
 import Head from 'next/head'
 import Header from '../components/Header';
 
-export default function Home() {
+const Home: NextPage = () => {
+  // stopping at 43:00
   return (
     <div>
       <Head>
@@ -11,5 +13,7 @@ export default function Home() {
       <Header />
    
     </div>
-  )
-}
+  );
+};
+
+export default Home;
