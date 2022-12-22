@@ -50,5 +50,5 @@ export default function Hero({}: Props) {
             </div>
         </div>
     </div>
-  )
+  );
 }
