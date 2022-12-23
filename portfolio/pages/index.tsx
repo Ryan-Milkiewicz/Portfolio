@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import WorkExperience from "../components/WorkExperience";
+import Skills from '../components/Skills';
 
 const Home: NextPage = () => {
   //left off at 1:41
@@ -17,7 +18,7 @@ const Home: NextPage = () => {
       <Header />
 
       {/* Hero */}
-      <section id="hero" className="snap-center">
+      <section id="hero" className="snap-start">
         <Hero />
       </section>
 
@@ -27,9 +28,14 @@ const Home: NextPage = () => {
       </section>
 
          {/* Experience */}
-         <section id="experience" className="snap-center">
-        < WorkExperience/>
+      <section id="experience" className="snap-center">
+        <WorkExperience/>
       </section>
+
+        {/* Skills */}
+        <section id="skills" className="snap-start">
+          <Skills/>
+        </section>
    
     </div>
   );
