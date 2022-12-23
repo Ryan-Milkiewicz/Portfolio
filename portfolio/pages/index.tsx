@@ -9,7 +9,7 @@ import Projects from '../components/Projects';
 import ContactMe from '../components/ContactMe';
 
 const Home: NextPage = () => {
-  //left off at 2:11
+  //left off at 2:20
   return (
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y 
       snap-mandatory overflow-scroll z-0">
