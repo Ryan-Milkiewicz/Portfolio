@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import hoffmanLogo from '../public/hoffman-logo.png';
 import javascriptLogo from '../public/javascript.png';
 
@@ -17,7 +18,7 @@ export default function ExperienceCard({}: Props) {
             }}
             transition={{ duration: 1.2 }}
             whileInView={{ opacity: 1, y: 0}}
-            viewPort={{ once: true }}
+            viewport={{ once: true }}
             className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-cover
             object-center"
             src={hoffmanLogo.src}
@@ -28,24 +29,24 @@ export default function ExperienceCard({}: Props) {
                 <h4 className="text-4xl font-light">Hoffman Development Corporation</h4>
                 <p className="font-bold text-2xl mt-1">Software Developer</p>
                 <div className="flex space-x-2 my-2">
-                    <img 
+                    <Image 
                         className="h-10 w-10 rounded-full"
-                        src={javascriptLogo.src}
+                        src={javascriptLogo}
                         alt=""
                     />
-                              <img 
+                    <Image 
                         className="h-10 w-10 rounded-full"
-                        src={javascriptLogo.src}
+                        src={javascriptLogo}
                         alt=""
                     />
-                              <img 
+                    <Image 
                         className="h-10 w-10 rounded-full"
-                        src={javascriptLogo.src}
+                        src={javascriptLogo}
                         alt=""
                     />
-                              <img 
+                    <Image 
                         className="h-10 w-10 rounded-full"
-                        src={javascriptLogo.src}
+                        src={javascriptLogo}
                         alt=""
                     />
                 </div>
