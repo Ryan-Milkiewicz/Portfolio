@@ -22,7 +22,7 @@ type Props = {
 }
 
 const Home = ({pageInfo, experiences, skills, socials}: Props) => {
-  //left off at 3:50
+  //left off at 3:51
   return (
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y 
       snap-mandatory overflow-y-scroll overflow-x-hidden z-0
