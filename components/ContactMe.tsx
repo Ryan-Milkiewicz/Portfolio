@@ -13,14 +13,14 @@ type Inputs = {
 type Props = {}
 
 export default function ContactMe({}: Props) {
-    const { 
-        register, 
-        handleSubmit 
-    } = useForm<Inputs>();
+    // const { 
+    //     register, 
+    //     handleSubmit 
+    // } = useForm<Inputs>();
 
-    const onSubmit: SubmitHandler<Inputs> = (formData) => {
-        window.location.href = `mailto:ryanmilkiewicz@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
-    }
+    // const onSubmit: SubmitHandler<Inputs> = (formData) => {
+    //     window.location.href = `mailto:ryanmilkiewicz@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
+    // }
 
   return (
     <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row
@@ -36,23 +36,23 @@ export default function ContactMe({}: Props) {
             </h4>
 
             <div className="space-y-10">
-                <div className="flex items-center space-x-5 justify-center">
+                {/* <div className="flex items-center space-x-5 justify-center">
                     <PhoneIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse"/>
                     <p className="text-2xl">+1234567890</p>
-                </div>
+                </div> */}
 
                 <div className="flex items-center space-x-5 justify-center">
                     <EnvelopeIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse"/>
                     <p className="text-2xl">ryanmilkiewicz@gmail.com</p>
                 </div>
 
-                <div className="flex items-center space-x-5 justify-center">
+                {/* <div className="flex items-center space-x-5 justify-center">
                     <MapPinIcon className="text-[#F7AB0A] h-7 w-7 animate-pulse"/>
                     <p className="text-2xl">123 Developer Lane</p>
-                </div>
+                </div> */}
             </div>
 
-            <form 
+            {/* <form 
                 onSubmit={handleSubmit(onSubmit)} 
                 className="flex flex-col space-y-2 w-fit mx-auto"
             >
@@ -67,7 +67,7 @@ export default function ContactMe({}: Props) {
                 <button type="submit" className="bg-[#F7AB0A] py-5 px-10 rounded-md text-black font-bold
                 text-lg">Submit</button>
 
-            </form>
+            </form> */}
         </div>
     </div>
   );
