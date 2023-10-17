@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import SanityLogo from '../public/sanityLogo.jpeg';
 import { Skill } from '../typings';
 import { urlFor } from '../sanity';
 

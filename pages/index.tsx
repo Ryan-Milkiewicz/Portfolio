@@ -7,21 +7,22 @@ import WorkExperience from "../components/WorkExperience";
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 import ContactMe from '../components/ContactMe';
-import { Experience, PageInfo, Skill, Social } from "../typings";
+import { Experience, PageInfo, Skill, Project, Social } from "../typings";
 import { fetchPageInfo } from "../utils/fetchPageInfo";
 import { fetchSkills } from "../utils/fetchSkills";
 import { fetchSocial } from "../utils/fetchSocials";
 import { fetchExperiences } from "../utils/fetchExperiences";
+import { fetchProjects } from "../utils/fetchProjects";
 
 type Props = {
   pageInfo: PageInfo;
   experiences: Experience[];
   skills: Skill[];
-  // need to add projects
+  projects: Project[];
   socials: Social[];
 }
 
-const Home = ({pageInfo, experiences, skills, socials}: Props) => {
+const Home = ({pageInfo, experiences, skills, projects, socials}: Props) => {
   //left off at 3:51
   return (
     <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y 
@@ -55,7 +56,7 @@ const Home = ({pageInfo, experiences, skills, socials}: Props) => {
 
         {/* Projects */}
         <section id="projects" className="snap-start">
-          <Projects />
+          <Projects projects={projects}/>
         </section>
 
         {/* Contact Me */}
@@ -73,12 +74,14 @@ export const getStaticProps: GetStaticProps<Props> = async() => {
   const pageInfo: PageInfo = await fetchPageInfo();
   const experiences: Experience[] = await fetchExperiences();
   const skills: Skill[] = await fetchSkills();
+  const projects: Project[] = await fetchProjects();
   const socials: Social[] = await fetchSocial();
   return {
     props: {
       pageInfo,
       experiences,
       skills,
+      projects,
       socials
     },
     // Next.js will attempt to re-generate the page:

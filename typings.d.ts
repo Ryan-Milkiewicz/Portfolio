@@ -52,6 +52,8 @@ export interface Experience extends SanityBody {
 }
 
 export interface Project extends SanityBody {
+    title: ReactNode;
+    length: ReactNode;
     _type: "skill";
     image: Image;
     linkToBuild: string;
