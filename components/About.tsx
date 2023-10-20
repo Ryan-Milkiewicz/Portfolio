@@ -1,6 +1,5 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import aboutImg from '../public/about-image.jpg';
 import { PageInfo } from '../typings';
 import { urlFor } from '../sanity';
 
