@@ -25,10 +25,6 @@ export default function WorkExperience({ experiences }: Props) {
               {experiences?.map(experience => (
                 <ExperienceCard key={experience._id} experience={experience} />
               ))}
-            {/* <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard />
-            <ExperienceCard /> */}
         </div>
     </motion.div>
   )
