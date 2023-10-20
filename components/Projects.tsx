@@ -22,7 +22,7 @@ function Projects({ projects }: Props) {
           Projects
       </h3>
 
-        <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 
+        <div className="relative w-full flex overflow-x-scroll snap-x snap-mandatory z-20 
         scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80" >
           {projects?.map((project, i) => (
         
@@ -38,6 +38,8 @@ function Projects({ projects }: Props) {
                 viewport={{ once: true}}
                 src={urlFor(project?.image).url()}
                 alt=""
+                width={500}
+                height={500}
                 />
 
                 <div className="space-y-10 px-0 md:px-10 max-w-6xl">
