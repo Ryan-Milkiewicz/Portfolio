@@ -13,7 +13,7 @@ function Skill({ skill, directionLeft}: Props) {
     <div className="group relative flex justify-center items-center p-2 sm:p-4">
   <motion.img
     initial={{
-      x: directionLeft ? -200 : 200,
+      x: directionLeft ? -100 : 100,
       opacity: 0,
     }}
     transition={{ duration: 1 }}
